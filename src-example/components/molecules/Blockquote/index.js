@@ -11,7 +11,7 @@ const StyledBlockquote = styled.blockquote`
   line-height: 2rem;
   box-sizing: border-box;
   color: ${palette('grayscale', 1)};
-  border-left: 5px solid ${palette('grayscale', 2, true)};
+  border-left: 5px solid ${palette('primary', 2, true)};
   margin: 1rem 0;
   padding: 0.5rem 0 0.5rem 1.5rem;
 `
