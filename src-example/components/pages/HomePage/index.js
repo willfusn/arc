@@ -2,7 +2,7 @@
 import React from 'react'
 
 import {
-  PageTemplate, Header, Hero, Footer, FeatureList,
+  PageTemplate, Header, Hero, Footer, FeatureList, Testimonials
 } from 'components'
 
 const HomePage = () => {
@@ -13,6 +13,7 @@ const HomePage = () => {
       footer={<Footer />}
     >
       <FeatureList />
+      <Testimonials />
     </PageTemplate>
   )
 }
