@@ -1,8 +1,9 @@
 import React from 'react';
 import styled from 'styled-components'
 import { palette, font } from 'styled-theme'
-import { Heading, Blockquote } from 'components'
-
+import { Blockquote, Heading } from 'components'
+import Fade from 'react-reveal/Fade';
+import makeCarousel from 'react-reveal/makeCarousel';
 
 const StyledHeading = styled(Heading)`
   text-align: center;
@@ -28,11 +29,24 @@ const StyledFeature = styled(Blockquote)`
   }
 `
 
+const Container = styled.div`
+  position: relative;
+  overflow: hidden;
+  left: 10%;
+  width: 100%;
+  height: 150px;
+`;
+
+const CarouselUI = ({ children }) => <Container>{children}</Container>;
+const Carousel = makeCarousel(CarouselUI);
+
 const Testimonials = ({ ...props }) => {
     return(
         <div {...props}>
             <StyledHeading>Testimonials</StyledHeading>
-            <Grid >
+            <Carousel defaultWait={3000} >
+                <Fade right>
+                <Grid >
                     <StyledFeature cite="Bob">
                         This is so complicated
                     </StyledFeature>
@@ -43,6 +57,8 @@ const Testimonials = ({ ...props }) => {
                         What were they thinking?
                     </StyledFeature>
                 </Grid>
+                </Fade>
+                <Fade right>
                 <Grid>
                     <StyledFeature cite="Thor">
                         Is that the best you can do
@@ -54,6 +70,8 @@ const Testimonials = ({ ...props }) => {
                         I’m Mary Poppins, y’all! 
                     </StyledFeature>
                 </Grid>
+                </Fade>
+            </Carousel>
         </div>
     )
 }
