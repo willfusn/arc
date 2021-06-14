@@ -48,7 +48,7 @@ The [Atomic Design](http://bradfrost.com/blog/post/atomic-web-design/) approach 
 
 Just clone one of the ARc [branches](#branches):
 ```sh
-$ git clone -b master https://github.com/diegohaz/arc my-app
+$ git clone -b master https://github.com/willfusn/arc my-app
 $ cd my-app
 ```
 
