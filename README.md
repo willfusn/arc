@@ -21,7 +21,7 @@ $ npm install
 $ npm run dev:example
 ```
 
-It will start the development server with [HMR](https://webpack.github.io/docs/hot-module-replacement) on top of it. Now you can open [http://localhost:3000](http://localhost:3000) in browser and start developing.
+It will start a development server with [HMR](https://webpack.github.io/docs/hot-module-replacement) on top of it. Now you can open [http://localhost:3000](http://localhost:3000) in browser and start developing.
 
 ***Important:*** *you will be doing all your work in the `src-example` directory*
 #### Run the example instance of Storybook
