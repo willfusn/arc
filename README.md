@@ -34,7 +34,7 @@ $ npm run storybook:example
 This should open [http://localhost:9001](http://localhost:9001).
 
 ### 2. Create a new branch for your work
-Name it `<your-name>-task-plat-922-eval-exercise` off of `master`. This will be the branch you will push to the remote upon completion.
+Name it `<your-name>-task-exercise` off of `master`. This will be the branch you will push to the remote upon completion.
 
 ## Task
 
