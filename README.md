@@ -8,7 +8,7 @@ Before you begin, be sure you have accepted the email invitation as a collaborat
 
 ```sh
 $ git clone 
-$ cd arc
+$ cd <your-repo-name>
 ```
 #### Install dependencies
 
